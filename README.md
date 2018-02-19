@@ -1,6 +1,6 @@
 # MBED TLS Example program on NUCLEO L476RG + ESP8266
 
-This is basically a copy of the mbed-tls example adopted on a Nucleo L476RG development board with an attached ESP8266 used for Wifi connections. I will be using this as a springboard for my mbed projects with Wifi and mbed tls support.
+This is basically a copy of the [mbed-tls example](https://github.com/ARMmbed/mbed-os-example-tls) adopted on a Nucleo L476RG development board with an attached ESP8266 used for Wifi connections. I will be using this as a springboard for my mbed projects with Wifi and mbed tls support.
 
 ## Description
 
@@ -11,9 +11,9 @@ The Nucleo L476RG board is using the ESP8266 for wifi connection. I have connect
 TX/RX (Rx -> Tx/ Tx -> Rx). You may be able to change this via mbed_app.json to suit your configuration.
 
 ## Quick Steps to compile
-This project is built using mbed-cli and not the online compiler. Please refer to mbed-cli on how to install and use it on your system
+This project is built using mbed-cli and not the online compiler. Please refer to [mbed-cli](https://github.com/ARMmbed/mbed-cli) on how to install and use it on your system
 
-**1) Import the project using mbed-cli**
+**1. Import the project using [mbed-cli](https://github.com/ARMmbed/mbed-cli)**
 ```
 >mbed import https://github.com/vpcola/nucleoesp.git test
 [mbed] Importing program "test" from "https://github.com/vpcola/nucleoesp.git" at latest revision in the current branch
@@ -27,21 +27,21 @@ This project is built using mbed-cli and not the online compiler. Please refer t
 [mbed] Adding library "easy-connect.git\wizfi310-driver" from "https://github.com/ARMmbed/wizfi310-driver" at rev #e0f7b9355e7e
 [mbed] Adding library "mbed-os" from "https://github.com/ARMmbed/mbed-os" at rev #569159b784f7
 ```
-**2) Change to the project directory**
+**2. Change to the project directory**
 ```
 >cd test
 ```
-**3) Set the target board**
+**3. Set the target board**
 ```
 >mbed target NUCLEO_L476RG
 [mbed] NUCLEO_L476RG now set as default target in program "test"
 ```
-**4) Set the toolchain (I'm using GCC for arm here)**
+**4. Set the toolchain (I'm using GCC for arm here)**
 ```
 >mbed toolchain GCC_ARM
 [mbed] GCC_ARM now set as default toolchain in program "test"
 ```
-**5) Start compiling**
+**5. Start compiling**
 ```
 >mbed compile
 Building project test (NUCLEO_L476RG, GCC_ARM)
