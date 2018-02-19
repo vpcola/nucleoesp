@@ -1,4 +1,6 @@
-# nucleoesp
+# MBED TLS Example program on NUCLEO L476RG
+
+This is basically a copy of the mbed-tls example adopted on a Nucleo L476RG development board with an attached ESP8266 used for Wifi connections. I will be using this as a springboard for my mbed projects with Wifi and mbed tls support.
 
 ## Description
 
