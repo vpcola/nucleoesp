@@ -26,8 +26,8 @@ This project is built using mbed-cli and not the online compiler. Please refer t
 [mbed] Adding library "easy-connect.git\wizfi310-driver" from "https://github.com/ARMmbed/wizfi310-driver" at rev #e0f7b9355e7e
 [mbed] Adding library "mbed-os" from "https://github.com/ARMmbed/mbed-os" at rev #569159b784f7
 ```
-**>cd test**
-**>mbed target NUCLEO_L476RG**
+**>cd test
+>mbed target NUCLEO_L476RG**
 ```
 [mbed] NUCLEO_L476RG now set as default target in program "test"
 ```
