@@ -13,8 +13,9 @@ TX/RX (Rx -> Tx/ Tx -> Rx). You may be able to change this via mbed_app.json to 
 ## Quick Steps to compile
 This project is built using mbed-cli and not the online compiler. Please refer to mbed-cli on how to install and use it on your system
 
-**>mbed import https://github.com/vpcola/nucleoesp.git test**
+**1) Import the project using mbed-cli**
 ```
+>mbed import https://github.com/vpcola/nucleoesp.git test
 [mbed] Importing program "test" from "https://github.com/vpcola/nucleoesp.git" at latest revision in the current branch
 [mbed] Adding library "easy-connect.git" from "https://github.com/ARMmbed/easy-connect" at rev #559d00bf1580
 [mbed] Adding library "easy-connect.git\atmel-rf-driver" from "https://github.com/ARMmbed/atmel-rf-driver" at rev #ca9782e68f5f
@@ -26,17 +27,23 @@ This project is built using mbed-cli and not the online compiler. Please refer t
 [mbed] Adding library "easy-connect.git\wizfi310-driver" from "https://github.com/ARMmbed/wizfi310-driver" at rev #e0f7b9355e7e
 [mbed] Adding library "mbed-os" from "https://github.com/ARMmbed/mbed-os" at rev #569159b784f7
 ```
-**>cd test
->mbed target NUCLEO_L476RG**
+**2) Change to the project directory**
 ```
+>cd test
+```
+**3) Set the target board**
+```
+>mbed target NUCLEO_L476RG
 [mbed] NUCLEO_L476RG now set as default target in program "test"
 ```
-**>mbed toolchain GCC_ARM**
+**4) Set the toolchain (I'm using GCC for arm here)**
 ```
+>mbed toolchain GCC_ARM
 [mbed] GCC_ARM now set as default toolchain in program "test"
 ```
-**>mbed compile**
+**5) Start compiling**
 ```
+>mbed compile
 Building project test (NUCLEO_L476RG, GCC_ARM)
 Scan: .
 Scan: mbed
@@ -61,7 +68,6 @@ Link: test
 Elf2Bin: test
 Text 237KB Data 2.79KB BSS 9.11KB ROM 240KB RAM 11.9KB
 Image: .\BUILD\NUCLEO_L476RG\GCC_ARM\test.bin
-
 ```
 After which, you can then transfer the *.bin file in BUILD\NUCLEO_L476RG\GCC_ARM\test.bin to your target board\drive.
 
